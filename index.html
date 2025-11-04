@@ -379,7 +379,39 @@
         margin-bottom: 4px;
     }
 }
-   
+   /* 组织者介绍页面基本 h3 样式 */
+#organizer-intro-page h3 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* 中文标题样式 */
+#organizer-intro-page .org-header-center h3:nth-child(odd) {
+    color: #1a2a6c;
+    font-size: 1.3rem;
+}
+
+/* 英文标题样式 */
+#organizer-intro-page .org-header-center h3:nth-child(even) {
+    color: #4fc3f7;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    #organizer-intro-page .org-header-center h3:nth-child(odd) {
+        font-size: 1.1rem;
+    }
+    
+    #organizer-intro-page .org-header-center h3:nth-child(even) {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+}
    .org-header-center {
     width: auto;
     height: auto;
@@ -2003,8 +2035,8 @@ margin-top: 5px;
         </div>
         <div class="container" style="padding: 20px;">
             <div style="max-width: 800px; margin: 0 auto;">
-                <span class="intro-title">中国国际进口博览会</span>
-          <div class="intro-title-en">China International Import Expo</div>
+                <span class="intro-title" style="text-align: center;">中国国际进口博览会</span>
+          <div class="intro-title-en" style="text-align: center;">China International Import Expo</div>
                 <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                   <div class="detail-bilingual-content">
                       <div class="bilingual-zh">
@@ -2056,14 +2088,14 @@ margin-top: 5px;
         </div>
         <div class="container" style="padding: 20px;">
             <div style="max-width: 800px; margin: 0 auto;">
-                <span class="intro-title">发起机构介绍</span>
-          <div class="intro-title-en">Organizer Introduction</div>
+                <span class="intro-title" style="text-align: center;">发起机构介绍</span>
+          <div class="intro-title-en" style="text-align: center;">Organizer Introduction</div>
                 
                 <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                     <div class="company-header-logo-container">
                  <img src="images/ITC_logo_full.jpg" alt="机构 Logo">
             </div>
-                            <h3> 国际贸易中心</h3>
+                            <h3 style=> 国际贸易中心</h3>
                      <h3> International Trade Centre</h3>
                              <div class="detail-bilingual-content">
                             <div class="bilingual-zh">联合国国际贸易中心是唯一一个完全致力于支持中小微企业国际化的发展机构，其使命是促进包容和可持续的经济发展，为实现联合国全球可持续发展目标作出贡献。</div>
@@ -2997,6 +3029,7 @@ if (filteredProducts.length === 0) {
     </script>
 </body>
 </html>
+
 
 
 
