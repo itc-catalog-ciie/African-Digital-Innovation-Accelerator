@@ -2335,7 +2335,7 @@ function initVerticalSlideshow() {
     if (prevArrow) {
         prevArrow.addEventListener('click', () => {
             pauseVerticalSlideShow();
-            changeVerticalSlide(-1);
+            changeVerticalSlide(1);
             startVerticalSlideShow();
         });
     }
@@ -2343,7 +2343,7 @@ function initVerticalSlideshow() {
     if (nextArrow) {
         nextArrow.addEventListener('click', () => {
             pauseVerticalSlideShow();
-            changeVerticalSlide(1);
+            changeVerticalSlide(-1);
             startVerticalSlideShow();
         });
     }
@@ -2986,6 +2986,7 @@ if (filteredProducts.length === 0) {
     </script>
 </body>
 </html>
+
 
 
 
