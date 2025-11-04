@@ -2003,8 +2003,10 @@ margin-top: 5px;
         </div>
         <div class="container" style="padding: 20px;">
             <div style="max-width: 800px; margin: 0 auto;">
-                <h1 style="text-align: center; margin-bottom: 10px; color: #1a2a6c;">中国国际进口博览会</h1>
-                 <h1 style="text-align: center; margin-bottom: 30px; color: #999;">China International Import Expo</h1>
+                <div class="card-title-content">
+                       <div class="card-title-zh">中国国际进口博览会</div>
+                      <div class="card-title-en">China International Import Expo</div>
+                     </div>
                 <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                   <div class="detail-bilingual-content">
                       <div class="bilingual-zh">
@@ -2056,18 +2058,15 @@ margin-top: 5px;
         </div>
         <div class="container" style="padding: 20px;">
             <div style="max-width: 800px; margin: 0 auto;">
-                <h1 style="text-align: center; margin-bottom: 10px; color: #1a2a6c;">发起机构介绍</h1>
-                <h1 style="text-align: center; margin-bottom: 30px; color: #999;">Organizer Introduction</h1>
+                 <div class="card-title-content">
+                       <div class="card-title-zh">发起机构介绍</div>
+                      <div class="card-title-en">Organizer Introduction</div>
+                     </div>
                 
                 <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                    <div class="org-header-center">
-                   <img class="org-logo-img"
-                                 src="images/ITC_logo_full.jpg"
-                                 alt="机构 Logo"
-                                 style="display:inline-block; width:6rem;  object-fit:contain; border-radius:6px; margin-bottom:15px;" />
-                            <!-- 如果想保留回退 icon（当 logo 加载失败或无 logo 时显示），可以保留下面这行并通过 JS 切换显示/隐藏 -->
-                            <i class="fas fa-landmark" aria-hidden="true" style="display:none;"></i>
-
+                    <div class="company-header-logo-container">
+                 <img src="images/ITC_logo_full.jpg" alt="机构 Logo">
+            </div>
                             <h3> 国际贸易中心</h3>
                      <h3> International Trade Centre</h3></div>
                              <div class="detail-bilingual-content">
@@ -2075,12 +2074,10 @@ margin-top: 5px;
                 <div class="bilingual-en">ITC is the only development agency that is fuly dedicated to supporting the internationalization of MSMEs. ITC's mission is to foster inclusive andsustainable economic development and contribute to achieving the United Nations Global Goals for Sustainable Development.</div>
             </div>
                     <div class="org-header-center">
-    <!-- 推荐图片文件名不要含空格，例如 images/AIBO_logo.png -->
-    <img class="org-logo-img"
-         src="images/AIBO_logo.png"
-         alt="机构 Logo"
-         style="display:inline-block; width:6rem; object-fit:contain; border-radius:6px; margin-bottom:15px;" />
-    <i class="fas fa-landmark" aria-hidden="true" style="display:none;"></i>
+
+                        <div class="company-header-logo-container">
+                 <img src="images/AIBO_logo.png" alt="机构 Logo">
+            </div>
     <h3>商务部国际商务官员研修学院</h3>
         <h3>Academy for International Business Officials, MOFCOM</h3>   </div>
                 
@@ -2090,12 +2087,9 @@ margin-top: 5px;
                     </div>
                     
                       <div class="org-header-center">
-    <!-- 推荐图片文件名不要含空格，例如 images/AIBO_logo.png -->
-   <img class="org-logo-img"
-         src="images/CFNA_logo.jpg"
-         alt="机构 Logo"
-         style="display:inline-block; width:6rem; object-fit:contain; border-radius:6px; margin-bottom:15px;" />
-    <i class="fas fa-landmark" aria-hidden="true" style="display:none;"></i>
+        <div class="company-header-logo-container">
+                 <img src="images/CFNA_logo.jpg" alt="机构 Logo">
+            </div>
     <h3>中国食品土畜进出口商会</h3>
     <h3>China Chamber of Commerce of Import & Export of Foodstuffs, Native Produce & Animal By-Products</h3>
 </div>
@@ -3010,6 +3004,7 @@ if (filteredProducts.length === 0) {
     </script>
 </body>
 </html>
+
 
 
 
