@@ -1635,7 +1635,7 @@ margin-top: 5px;
 }
 
 .website-button .bilingual-content {
-    text-align: left;
+    text-align: center;
     line-height: 1.2;
 }
 
@@ -2634,7 +2634,7 @@ function formatBilingualText(zhText, enText) {
     // 如果有网站链接，显示按钮
    if (company.contact.website && company.contact.website.trim() !== '') {
     const websiteButton = document.createElement('a');
-    websiteButton.href = company.contact.alibaba;
+    websiteButton.href = company.alibaba;
     websiteButton.target = '_blank'; // 在新标签页打开
     websiteButton.className = 'website-button';
     websiteButton.innerHTML = `
@@ -2662,6 +2662,7 @@ function formatBilingualText(zhText, enText) {
     </script>
 </body>
 </html>
+
 
 
 
