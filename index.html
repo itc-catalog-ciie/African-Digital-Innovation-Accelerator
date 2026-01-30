@@ -1801,7 +1801,7 @@ margin-top: 5px;
     
                     <!-- 标题区域 -->
                     <div class="cover-header">
-                        <div class="cii-logo">进博优品交易会</div>
+                        <div class="cii-logo">百店千品</div>
                         <div class="cii-logo">CIIE U-Fair</div>
                         <div class="cii-subtitle">ITC商家名录</div>
                         <div class="cii-subtitle">ITC Catalog of Supported Suppliers</div>
@@ -2151,7 +2151,7 @@ let isSearching = false; // 新增：是否正在搜索
 let companies = [];
 
 function loadCSVData() {
-    Papa.parse('data/ufair_20251210.csv', {
+    Papa.parse('data/thousand alibaba.csv', {
         download: true,
         header: true,
         skipEmptyLines: true,
@@ -2740,7 +2740,7 @@ function formatBilingualText(zhText, enText) {
     // 如果有网站链接，显示按钮
     if (company.contact.website && company.contact.website.trim() !== '') {
         const websiteButton = document.createElement('a');
-        websiteButton.href = company.contact.website;
+        websiteButton.href = company.alibaba;
         websiteButton.target = '_blank'; // 在新标签页打开
         websiteButton.className = 'website-button';
         websiteButton.innerHTML = `
@@ -2765,6 +2765,7 @@ function formatBilingualText(zhText, enText) {
     </script>
 </body>
 </html>
+
 
 
 
